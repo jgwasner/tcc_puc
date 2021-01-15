@@ -1,0 +1,81 @@
+{
+  "nome_arquivo_configuracao": "config.json",
+  "aplicar_stemmer": false,
+  "bots": [
+    {
+      "bot_id": 1,
+      "nome": "Alistamento Militar",
+      "arquivo": "skill-alistamento-militar.json"
+    },
+    {
+      "bot_id": 2,
+      "nome": "COVID",
+      "arquivo": "skill-covid.json"
+    },
+    {
+      "bot_id": 3,
+      "nome": "Login \u00danico",
+      "arquivo": "skill-login-unico.json"
+    },
+    {
+      "bot_id": 4,
+      "nome": "IRPF 2020",
+      "arquivo": "skill-perguntao-irpf-2020.json"
+    },
+    {
+      "bot_id": 5,
+      "nome": "PGMEI",
+      "arquivo": "skill-pgmei.json"
+    },
+    {
+      "bot_id": 6,
+      "nome": "Selo Turismo Respons\u00e1vel",
+      "arquivo": "skill-poc-selo-turismo-responsavel.json"
+    },
+    {
+      "bot_id": 7,
+      "nome": "Cadastur",
+      "arquivo": "skill-cadastur.json"
+    },
+    {
+      "bot_id": 8,
+      "nome": "Tuberculose",
+      "arquivo": "skill-tuberculose.json"
+    }
+  ],
+  "diretorio_skills": "skills",
+  "diretorio_dados": "dados",
+  "diretorio_modelos": "modelos",
+  "arquivo_perguntas_zero": "bots_perguntas_0.csv",
+  "arquivo_todas": "bots_perguntas_todas.csv",
+  "arquivo_treino_testes": "treino_testes.csv",
+  "arquivo_validacao": "validacao.csv",
+  "arquivo_validacao_com_zero": "validacao_com_0.csv",
+  "arquivo_treino_testes_processado": "treino_testes_processado.csv",
+  "arquivo_vocabulario": "vocabulario.txt",
+  "arquivo_vetorizador": "vetorizador.pkl",
+  "padrao_arquivo_classificador_base": "clf_base_%classe%.pkl",
+  "padrao_arquivo_classificador_voting": "clf_voting_%bot_id%.pkl",
+  "arquivo_classificador_voting": "clf_voting.pkl",
+  "arquivo_informacoes": "info.json",
+  "arquivo_resultados": {
+    "True": "voting_resultados_com_stemmer.pkl",
+    "False": "voting_resultados_sem_stemmer.pkl"
+  },
+  "validacao_size": 0.35,
+  "random_state": 112020,
+  "vocab": {
+    "freq_min": 0,
+    "remover_frequentes": 0
+  },
+  "vetorizador": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "smooth_idf": false,
+    "norm": "l2",
+    "vector_vocab": false
+  }
+}
